@@ -7,7 +7,7 @@ public class Pedido {
     private Cliente cliente;
 
     private Double valorTotal;
-    private ArrayList<Ingresso> ingressos = new ArrayList<>();
+    private ArrayList<Ingresso> ingressos;
 
     public Double calculaValor(Ingresso ingresso){
         this.valorTotal = ingresso.getValor() * ingresso.getQuantidade();
